@@ -87,15 +87,13 @@ h3{
    grid-gap: 1rem;
  }
  .grid-item-name {
-   background-color: rgba(255, 255, 255, 0.8);
-   border: 1px solid rgba(0, 0, 0, 0.8);
    padding: 0.5rem;
    text-align: center;
    font-size: medium;
    background-color: #6C63FF;
    color: #ffffff;
-   font-weight: bold;
-
+   font-weight: bold; 
+   border-radius: 0.5rem;
  }
 
  .image-name{
@@ -113,11 +111,13 @@ h3{
    font-size: large;
    display: flex;
    justify-content: center;
+   color: #262196;
 }
 
 footer a{
    padding: 0 20px;
    font-size: 1.8rem;
+   color: #262196;
 }
 
 @media (max-width: 1420px){
