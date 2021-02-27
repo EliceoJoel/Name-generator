@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(to top right, #6C63FF, #ffffff);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+header{
+   text-align: center;
+}
+
+.body{
+   display: flex;
+}
+
+.main-images{
+   width: 100%;
+   height: auto;
+   text-align: center;
+}
+
+#main{
+   width: 100%;
+   height: auto;
+}
+
+.content{
+   margin-top: 2rem;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   font-size: larger;
+}
+
+
+label {
+   font-weight: bold;
+   display: flex;
+   flex-direction: column;
+}
+
+.content-2{
+   width: 70%;
+}
+
+select, input{
+   width: 100%;
+   margin: 0.5rem 0 0.8rem 0;
+   border: none;
+   padding: 0.5rem;
+   font-size: medium;
+   border-radius: 0.5rem;
+   outline: none;
+}
+
+#btn-submit{
+   width: 40%;
+   background-color: #6C63FF;
+   font-size: larger;
+   font-weight: bolder;
+}
+
+#btn-submit:hover{
+   background-color: #5a52fd;
+}
+
+/**Names generated**/
+
+h3{
+   margin-top: 3rem;
+   text-align: center;
+}
+
+.grid-container-names {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   grid-gap: 1rem;
+ }
+ .grid-item-name {
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid rgba(0, 0, 0, 0.8);
+   padding: 0.5rem;
+   text-align: center;
+   font-size: medium;
+   background-color: #6C63FF;
+   color: #ffffff;
+   font-weight: bold;
+
+ }
+
+ .image-name{
+    width: 100%;
+    height: auto;
+ }
+
+ footer{
+   height: 3rem;
+   align-items: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   font-size: large;
+   display: flex;
+   justify-content: center;
+}
+
+footer a{
+   padding: 0 20px;
+   font-size: 1.8rem;
+}
+
+@media (max-width: 1420px){
+   .grid-container-names{
+      grid-template-columns: auto auto auto;
+   }
+}
+
+@media (max-width: 1000px){
+   .body{
+      display: block;
+   }
+
+   h1{
+      margin: 3rem 0;
+   }
+
+   #main{
+      width: 50%;
+   }
+
+   #btn-submit{
+      width: 100%;
+   }
+}
+
+@media (max-width: 500px){
+   .grid-container-names{
+      grid-template-columns: auto auto;
+   }
+
+   #main{
+      width: 80%;
+   }
+
+   footer{
+      display: block;
+      text-align: center;
+   }
+
+}
+
+@media (max-height: 900px){
+   footer{
+      position: relative;
+      margin-top: 5rem;
+   }
+}
